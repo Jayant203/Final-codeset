@@ -1,11 +1,17 @@
 {
     "variables":{
-            "packagename" : "drupal"
+            "packagename" : "drupal",
+            "region_name":"us-east-1",
+            "aws_access_key": "AKIAXQ2VFPCKHHH67XVG",
+            "aws_secret_key": "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"
     },
 "builders": [
     {
       "ami_name": "ion-packer-{{timestamp}}",
       "instance_type": "t2.micro",
+      "region":"{{user `region_name`}}",
+      "access_key": "{{user `aws_access_key`}}",
+      "secret_key": "{{user `aws_secret_key`}}",
       "source_ami_filter": {
         "filters": {
           "virtualization-type": "hvm",
@@ -30,6 +36,6 @@
 
     }
    ]
- 
+
 
 }
