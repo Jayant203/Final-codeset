@@ -2,8 +2,8 @@
     "variables":{
             "packagename" : "drupal",
             "region_name":"us-east-1",
-            "aws_access_key": "AKIAXQ2VFPCKHHH67XVG",
-            "aws_secret_key": "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"
+            "aws_access_key": "",
+            "aws_secret_key": "3Z"
     },
 "builders": [
     {
